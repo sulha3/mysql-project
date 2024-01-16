@@ -11,24 +11,30 @@ Create a database named library and create following TABLES in the database:
 4. IssueStatus
 5. ReturnStatus
 6. Books
+
+
 Attributes for the tables:
+
 1. Branch
 ∙Branch_no - Set as PRIMARY KEY
 ∙Manager_Id
 ∙Branch_address
 ∙Contact_no
-2. Employee
+
+3. Employee
 ∙Emp_Id – Set as PRIMARY KEY
 ∙Emp_name
 ∙Position
 ∙Salary
 ∙Branch_no - Set as FOREIGN KEY and it should refer branch_no in
 EMPLOYEE table
-3. Customer
+
+5. Customer
 ∙Customer_Id - Set as PRIMARY KEY
 ∙Customer_name
 ∙Customer_address
 ∙Reg_date
+
 4.IssueStatus
 ∙Issue_Id - Set as PRIMARY KEY
 ∙Issued_cust – Set as FOREIGN KEY and it refer customer_id in
@@ -37,14 +43,16 @@ CUSTOMER table
 ∙Issue_date
 ∙Isbn_book – Set as FOREIGN KEY and it should refer isbn in
 BOOKS table
-5. ReturnStatus
+
+7. ReturnStatus
 ∙Return_Id - Set as PRIMARY KEY
 ∙Return_cust
 ∙Return_book_name
 ∙Return_date
 ∙Isbn_book2 - Set as FOREIGN KEY and it should refer isbn in
 BOOKS table
-6. Books
+
+9. Books
 ∙ISBN - Set as PRIMARY KEY
 ∙Book_title
 ∙Category
@@ -52,7 +60,9 @@ BOOKS table
 ∙Status [Give yes if book available and no if book not available] ∙
 Author
 ∙Publisher
+
 Write the queries for the following:
+
 1. Retrieve the book title, category, and rental price of all available
 books.
 2. List the employee names and their respective salaries in descending
